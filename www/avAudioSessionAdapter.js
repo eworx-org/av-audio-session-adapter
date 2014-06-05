@@ -5,20 +5,20 @@ var AVAudioSessionAdapter = function() {
 };
 
 AVAudioSessionAdapter.audioSessionCategories = {
-    AMBIENT = 'AVAudioSessionCategoryAmbient',
-    SOLO_AMBIENT = 'AVAudioSessionCategorySoloAmbient',
-    PLAYBACK = 'AVAudioSessionCategoryPlayback',
-    RECORD = 'AVAudioSessionCategoryRecord',
-    PLAY_AND_RECORD = 'AVAudioSessionCategoryPlayAndRecord',
-    AUDIO_PROCESSING = 'AVAudioSessionCategoryAudioProcessing',
-    MULTI_ROUTE = 'AVAudioSessionCategoryMultiRoute'
+    AMBIENT: 'AVAudioSessionCategoryAmbient',
+    SOLO_AMBIENT: 'AVAudioSessionCategorySoloAmbient',
+    PLAYBACK: 'AVAudioSessionCategoryPlayback',
+    RECORD: 'AVAudioSessionCategoryRecord',
+    PLAY_AND_RECORD: 'AVAudioSessionCategoryPlayAndRecord',
+    AUDIO_PROCESSING: 'AVAudioSessionCategoryAudioProcessing',
+    MULTI_ROUTE: 'AVAudioSessionCategoryMultiRoute'
 };
 
 AVAudioSessionAdapter.audioSessionCategoryOptions = {
-    MIX_WITH_OTHERS = 1,
-    DUCK_OTHERS = 2,
-    ALLOW_BLUETOOTH = 4,
-    DEFAULT_TO_SPEAKER = 8
+    MIX_WITH_OTHERS: 1,
+    DUCK_OTHERS: 2,
+    ALLOW_BLUETOOTH: 4,
+    DEFAULT_TO_SPEAKER: 8
 }
 
 AVAudioSessionAdapter.prototype.getCategory = function(resultCallback) {
