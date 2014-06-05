@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="gr.eworx.avAudioSessionAdapter" version="0.0.1">
+
+    <name>AVAudioSessionAdapter</name>
+    
+    <description>iOS AVAudioSession adapter</description>
+    
+    <license>Apache 2.0</license>
+    
+    <keywords>cordova,ios,audio,session</keywords>
+    
+    <js-module src="www/avAudioSessionAdapter.js" name="AVAudioSessionAdapter">
+        <clobbers target="window.AVAudioSessionAdapter" />
+    </js-module>
+    
+    <platform name="ios">
+    
+        <config-file target="config.xml" parent="/*">
+            <feature name="AVAudioSessionAdapter">
+                <param name="ios-package" value="AVAudioSessionAdapter"/>
+            </feature>
+        </config-file>
+    
+        <header-file src="src/ios/AVAudioSessionAdapter.h" />
+    
+        <source-file src="src/ios/AVAudioSessionAdapter.m" />
+        
+    </platform>
+    
+</plugin>
