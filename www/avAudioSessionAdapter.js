@@ -19,7 +19,7 @@ AVAudioSessionAdapter.audioSessionCategoryOptions = {
     DUCK_OTHERS: 2,
     ALLOW_BLUETOOTH: 4,
     DEFAULT_TO_SPEAKER: 8
-}
+};
 
 AVAudioSessionAdapter.prototype.getCategory = function(resultCallback) {
     exec(successCallback, errorCallback, "AVAudioSessionAdapter", "getCategory", []);
