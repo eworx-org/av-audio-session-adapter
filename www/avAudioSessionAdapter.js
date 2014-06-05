@@ -5,7 +5,7 @@ var AVAudioSessionAdapter = function() {
 };
 
 AVAudioSessionAdapter.audioSessionCategories = {
-    AMBIENT = 'AVAudioSessionCategoryAmbient';
+    AMBIENT = 'AVAudioSessionCategoryAmbient',
     SOLO_AMBIENT = 'AVAudioSessionCategorySoloAmbient',
     PLAYBACK = 'AVAudioSessionCategoryPlayback',
     RECORD = 'AVAudioSessionCategoryRecord',
