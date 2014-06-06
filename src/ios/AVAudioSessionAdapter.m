@@ -23,10 +23,10 @@
     
     @try {
         NSString* value = (NSString*)[command.arguments objectAtIndex:0];
-        NSUInteger options = 0;
+        int options = 0;
     
         if ([command.arguments count] > 1) {
-            options = (NSUInteger)[command.arguments objectAtIndex:1];
+            options = [[command.arguments objectAtIndex:1] integerValue];
         }
         
         NSError* err = nil;
@@ -35,7 +35,8 @@
             [[AVAudioSession sharedInstance] setCategory:value error:&err];    
         }
         else {
-            [[AVAudioSession sharedInstance] setCategory:value withOptions:(AVAudioSessionCategoryOptions)options error:&err];
+            AVAudioSessionCategoryOptions typedOptions = (AVAudioSessionCategoryOptions)options;
+            [[AVAudioSession sharedInstance] setCategory:value withOptions:typedOptions error:&err];
         }
         
         if (err) {
