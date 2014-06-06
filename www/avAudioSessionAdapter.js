@@ -4,7 +4,7 @@ var exec = require('cordova/exec');
 var AVAudioSessionAdapter = function() {
 };
 
-AVAudioSessionAdapter.audioSessionCategories = {
+AVAudioSessionAdapter.Categories = {
     AMBIENT: 'AVAudioSessionCategoryAmbient',
     SOLO_AMBIENT: 'AVAudioSessionCategorySoloAmbient',
     PLAYBACK: 'AVAudioSessionCategoryPlayback',
@@ -14,7 +14,7 @@ AVAudioSessionAdapter.audioSessionCategories = {
     MULTI_ROUTE: 'AVAudioSessionCategoryMultiRoute'
 };
 
-AVAudioSessionAdapter.audioSessionCategoryOptions = {
+AVAudioSessionAdapter.CategoryOptions = {
     MIX_WITH_OTHERS: 1,
     DUCK_OTHERS: 2,
     ALLOW_BLUETOOTH: 4,
