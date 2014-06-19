@@ -2,6 +2,9 @@
 var exec = require('cordova/exec');
 
 var AVAudioSessionAdapter = function() {
+    if (!(this instanceof AVAudioSessionAdapter)) {
+        return new AVAudioSessionAdapter();
+    }
 };
 
 AVAudioSessionAdapter.Categories = {
