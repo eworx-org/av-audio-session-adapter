@@ -28,6 +28,7 @@ The following functions are supported:
 A typical usage is as follows:
 
 ```javascript
+var AVAudioSessionAdapter = gr.eworx.AVAudioSessionAdapter;
 var audioSession = new AVAudioSessionAdapter();
 audioSession.setCategoryWithOptions(
 	function() {
