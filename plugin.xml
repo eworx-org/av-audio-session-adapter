@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="gr.eworx.avAudioSessionAdapter" version="0.0.1">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="gr.eworx.avAudioSessionAdapter" version="0.0.2">
 
     <name>AVAudioSessionAdapter</name>
     
@@ -10,7 +10,7 @@
     <keywords>cordova,ios,audio,session</keywords>
     
     <js-module src="www/avAudioSessionAdapter.js" name="AVAudioSessionAdapter">
-        <clobbers target="window.AVAudioSessionAdapter" />
+        <clobbers target="window.gr.eworx.AVAudioSessionAdapter" />
     </js-module>
     
     <platform name="ios">
