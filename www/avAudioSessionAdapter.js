@@ -44,11 +44,11 @@ AVAudioSessionAdapter.prototype.getCategoryOptions = function(resultCallback) {
     function errorCallback(param) { }
 };
 
-AVAudioSessionAdapter.prototype.setCategory = function(successCallback, errorCallback, category) {
+AVAudioSessionAdapter.prototype.setCategory = function(category, successCallback, errorCallback) {
     exec(successCallback, errorCallback, "AVAudioSessionAdapter", "setCategory", [category]);
 };
 
-AVAudioSessionAdapter.prototype.setCategoryWithOptions = function(successCallback, errorCallback, category, categoryOptions) {
+AVAudioSessionAdapter.prototype.setCategoryWithOptions = function(category, categoryOptions, successCallback, errorCallback) {
     exec(successCallback, errorCallback, "AVAudioSessionAdapter", "setCategory", [category, categoryOptions]);
 };
 
