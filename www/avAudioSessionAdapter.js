@@ -38,7 +38,7 @@ AVAudioSessionAdapter.prototype.getCategoryOptions = function(resultCallback) {
     exec(successCallback, errorCallback, "AVAudioSessionAdapter", "getCategoryOptions", []);
         
     function successCallback(param) {
-            resultCallback(param);
+        resultCallback(param);
     }
         
     function errorCallback(param) { }
