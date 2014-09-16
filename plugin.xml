@@ -21,6 +21,8 @@
             </feature>
         </config-file>
     
+        <framework src="AVFoundation.framework" />
+    
         <header-file src="src/ios/AVAudioSessionAdapter.h" />
     
         <source-file src="src/ios/AVAudioSessionAdapter.m" />
