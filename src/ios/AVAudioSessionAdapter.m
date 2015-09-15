@@ -43,7 +43,13 @@
             pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:[err localizedDescription]];
         }
         else {
-            pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
+            [[AVAudioSession sharedInstance] setActive:YES error:&err];
+            if (err) {
+                pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:[err localizedDescription]];
+            }
+            else {
+                pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
+            }
         }
     }
     @catch (NSException* ex) {
